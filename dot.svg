@@ -1,0 +1,17 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" version="1.1" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+  <defs id="defs4">
+    <linearGradient id="lg1">
+      <stop id="s1" offset="0" style="stop-color:white;stop-opacity:0;"/>
+      <stop id="s2" offset="1" style="stop-color:white"/>
+    </linearGradient>
+    <linearGradient xlink:href="#lg1" id="lg3" x1="191" y1="156" x2="148" y2="10" gradientUnits="userSpaceOnUse"/>
+    <linearGradient id="lg2">
+      <stop style="stop-color:#ffd5d5;stop-opacity:1;" offset="0" id="s3"/>
+      <stop style="stop-color:#ff8080;stop-opacity:1;" offset="0.36" id="s4"/>
+      <stop style="stop-color:#ff2a2a;stop-opacity:1;" offset="0.79" id="s5"/>
+      <stop style="stop-color:#ff0000;stop-opacity:1;" offset="1" id="s6"/>
+    </linearGradient>
+    <radialGradient xlink:href="#lg2" id="rg1" cx="-100" cy="-278" fx="-100" fy="-278" r="155" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.267,0,0,1.73,26.67,204.12)"/>
+  </defs>
+  
+<g class="currentLayer" style=""><title>Layer 1</title><path fill="#edb315" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="1" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M13.718311309814453,152.18310070037842 C13.718311309814453,71.0765717806737 75.68321844622574,5.380283355712891 152.18310379981995,5.380283355712891 C228.68298915341416,5.380283355712891 290.64789628982544,71.0765717806737 290.64789628982544,152.18310070037842 C290.64789628982544,233.28962962008313 228.68298915341416,298.98591804504395 152.18310379981995,298.98591804504395 C75.68321844622574,298.98591804504395 13.718311309814453,233.28962962008313 13.718311309814453,152.18310070037842 z" id="svg_1" class="selected"/></g></svg>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="chessboard.css">
+<script src="boardObject.js"></script>
+<script src="gameScript.js"></script>
+<script src="plotly-latest.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" type="image/x-icon" href="de.png" />
+<script>
+
+	document.addEventListener('DOMContentLoaded', function(){ 
+
+		if ((window.location.protocol == "http:") & (window.location.hostname!="localhost")) {
+			
+			window.location = 'https://' + window.location.hostname + window.location.pathname + window.location.hash;
+
+		}
+
+	}, false);
+
+</script>
+
+</head>
+<body>
+    <div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content" id="modalBox">
+		<span class="mClose" id='mCloseButt'> <img align='right' margin-right=10px; src='exit.svg' height=15 width=15></span>
+		<p class='htmmodal' id='modalHtm'> Some text in the Modal..</p>
+	  </div>
+
+	</div>
+	<ul>
+		<li id='logindropdown' class="dropdown">
+		    
+		</li>
+		<li id="Gamedrpd" class="dropdown">
+			<a href="javascript:void(0)"  class="dropbtn">Challenge</a>
+			<div class="dropdown-content">
+				<a href="javascript:createChallenge()">Create a public challenge</a>
+				<a href='javascript:showModal(6,"Challenge user")'>Create a private challenge</a>
+			</div>
+		</li>
+		<li id="Statdrpd" class="dropdown">
+			<a href="javascript:showStats()" class="dropbtn">Statistics</a>
+			<div class="dropdown-content">
+				
+				
+			</div>
+		</li>
+		<li class="logo"><a href="#home">chess.rehab v1.0</a></li>
+	</ul>
+	
+	<div id="content" class="row">
+		<table>
+			<tr>
+				<td style="vertical-align:top;width:270px">
+					<div id='container' class='container'>
+						<div class='doc8'>
+							<img width=200px src="titel1.png"  >
+						</div>
+						<div id='mygms' class='doc000'>	
+						</div>
+					</div>
+				</td>
+				<td style="vertical-align:top;">
+					<div id="datacontent" class="doccontainer">
+						<div id="doccontainer" class="doccontainer"></div>
+						<div id="graphs" class="graph">
+						</div>
+					</div>
+				</td>
+			<tr>
+		</table>
+	</div>
+	<script>
+			
+			
+			document.getElementById("logindropdown").innerHTML=setSceneMenus();
+			if (sessionStorage.username==undefined) {	
+				document.getElementById("doccontainer").innerHTML=setSceneUnlogged();
+				var vv=getQueryVariable("vldtr");
+				var ss=getQueryVariable("slctr");
+			
+				if (ss==false) {
+			
+				} else {
+					passReset2(ss,vv);
+					
+				}
+			
+			}
+			else {
+				document.getElementById("mygms").innerHTML=setSceneLogged();
+				loadBoards();
+			}
+
+
+	</script>
+	</table>
+		
+		
+
+	
+
+
+	
+	
+</body>
+</html>
